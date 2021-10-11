@@ -1,0 +1,1869 @@
+@font-face {
+    font-family: "URWDIN";
+    src: url("https://bambooairwayscom.sharepoint.com/SiteAssets/Fonts/URWDINMedium.ttf");
+}
+
+.overflow {
+    overflow: auto;
+}
+
+.left {
+    float: left;
+}
+
+.right {
+    float: right;
+}
+
+.btn-add {
+    margin-top: 10px;
+}
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.btn {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 1px 10px;
+    position: static;
+    width: 88px;
+    height: 25px;
+    left: 10px;
+    top: 12px;
+    background: #64AF53 !important;
+    color: #fff !important;
+    text-decoration: none;
+}
+
+.hidden {
+    display: none;
+}
+
+#sp-appBar {
+    display: none !important;
+}
+
+span.lable.label-primary {
+    background-color: #4caf50;
+    color: #fff;
+    padding: 2px 8px;
+}
+
+span.lable.label-danger {
+    background-color: #d9534f;
+    color: #fff;
+    padding: 2px 8px;
+}
+
+.boxSearch {
+    position: absolute;
+    height: 100px;
+    background: #ffff;
+    width: 300px;
+    margin-top: 14px;
+    padding: 10px;
+    margin-left: -5px;
+    box-shadow: 0 1px 0 #edf2f9;
+}
+
+th {
+    position: relative;
+}
+
+a.btnSearch {
+    background: #007bff;
+    color: #fff;
+    padding: 4px 10px;
+    text-decoration: none;
+}
+
+.button-search {
+    margin-top: 10px;
+}
+
+input.text-search {
+    width: 70%;
+}
+
+.line {
+    border-bottom: 2px solid #1b1818;
+    margin-top: 10px;
+}
+
+a.btnClose {
+    background: #f2f2f2;
+    color: #1d1a1a;
+    padding: 4px 10px;
+    text-decoration: none;
+    margin-left: 10px;
+}
+
+/* .column-sticky {
+  background-color: #fafafa;
+  z-index: 9999;
+}
+
+.column-sticky, .header-sticky {
+  right: 0;
+  position: -webkit-sticky;
+  position: sticky;
+} */
+
+.lable {
+    display: inline;
+    padding: 0.2em 0.6em 0.3em;
+    font-size: 75%;
+    font-weight: 700;
+    line-height: 1;
+    color: #fff;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: baseline;
+    border-radius: 0.25em;
+}
+
+/* change Layout Hidden */
+#CommentsWrapper {
+    /* comment */
+    display: none !important;
+}
+
+.webPartContainer {
+    /* header title va name or email address */
+    display: none !important;
+}
+
+div#spCommandBar {
+    /* vung public , draft not saved, or save as darf , page details */
+    display: none !important;
+}
+
+div#spSiteHeader {
+    display: none !important;
+}
+
+.mainDynTable.overflow {
+    overflow: visible !important;
+}
+
+div#HeaderButtonRegion {
+    display: none !important;
+}
+
+div#O365_SearchBoxContainer_container {
+    display: none !important;
+}
+
+.row {
+    display: inline-block !important;
+    display: -ms-flexbox !important;
+    display: block !important;
+}
+
+/* fix css Local */
+div#workbenchPageContent {
+    width: 100%;
+    padding: 0px;
+    margin: 0px;
+    max-width: 100%;
+}
+
+.Canvas.grid.Canvas--withLayout.Canvas--edit {
+    padding: 0px;
+    margin: 0px;
+}
+
+.btn-bamboo {
+    background-color: #4ebdec !important;
+    border-color: #4ebdec !important;
+    border-radius: 0 !important;
+    font-size: 12px;
+    height: 32px;
+    width: 95px;
+    color: #fff !important;
+}
+
+html,
+body, .workbench_ecefc8ba, div[class^="root"] {
+    margin: 0;
+    padding: 0;
+    font-family: "URWDIN", Tahoma, Arial, sans-serif !important;
+    font-size: 13px !important;
+    /* line-height: 1.5 !important; */
+}
+
+.pro-sidebar-inner {
+    background-color: #fff !important;
+}
+
+.pro-sidebar .pro-menu {
+    padding-top: 0px !important;
+}
+
+.pro-sidebar .pro-menu a {
+    color: #fff !important;
+    font-weight: normal;
+    font-size: 13px;
+}
+
+.leftMenu,
+.bottomSection {
+    display: inline-block;
+    vertical-align: top;
+}
+
+.openbtn {
+    display: flex;
+}
+
+.leftMenu {
+    background-color: #fff;
+    color: #fff;
+    height: 800px;
+    width: 52px;
+    position: relative;
+    color: #00558f;
+}
+
+.bottomSection {
+    padding: 10px 0;
+    position: absolute;
+    left: 52px;
+    right: 0;
+    top: 0;
+    border-left: 1px solid #dee2e6;
+}
+
+.pro-sidebar {
+    width: 100% !important;
+    min-width: 100% !important;
+    max-width: 220px;
+
+}
+
+.open-menu .leftMenu {
+    width: 220px !important;
+}
+
+.open-menu .bottomSection {
+    left: 220px !important;
+}
+
+.close-menu .leftMenu {
+    width: 52px !important;
+}
+
+.close-menu .bottomSection {
+    left: 52px !important;
+}
+
+.kuma-menu {
+    background: #037bfe;
+}
+
+a.openbtn {
+    margin-left: 0px !important;
+    margin-top: 15px;
+}
+
+span.icon {
+    margin-right: 15px;
+}
+
+.pro-sidebar .pro-menu .pro-menu-item > .pro-inner-item > .pro-item-content {
+    text-overflow: initial !important;
+}
+
+.row {
+    display: inline-block !important;
+    display: block !important;
+}
+
+.bottomSection,
+.leftMenu {
+    display: block !important;
+    vertical-align: top;
+    z-index: 0;
+}
+
+.l_h_50a7110f,
+.SPCanvas-canvas,
+.SPCanvas,
+.container,
+.CanvasZone {
+    width: 100% !important;
+    max-width: 100% !important;
+}
+
+a.openbtn {
+    margin-left: 0px !important;
+}
+
+.pull-right {
+    float: right;
+}
+
+.CanvasZone {
+    max-width: 100% !important;
+}
+
+.tabpane-bamboo {
+    padding: 0px 10px !important;
+    padding-top: 20px !important;
+}
+
+.kuma-uxform-field .kuma-label {
+    display: block !important;
+    text-align: left !important;
+    width: 100% !important;
+}
+
+.pull-right {
+    float: right;
+}
+
+.CanvasZone {
+    max-width: 100% !important;
+}
+
+
+.kuma-uxform-field .kuma-label .label-content {
+    text-align: left !important;
+}
+
+
+.kuma-calendar-table th {
+    background-color: white !important;
+}
+
+.formBigRow {
+    margin-top: 35px !important;
+}
+
+.userQualificationTable .kuma-uxtable-cell {
+    background-color: white !important;
+}
+
+.card-hrm {
+    border: none !important;
+    margin-bottom: 20px;
+    filter: drop-shadow(0px 0px 10px rgba(98, 98, 98, 0.1));
+}
+
+.card-header-hrm {
+    height: 34px !important;
+    background-color: #E9F5FE !important;
+    border: 1px solid #E9F5FE !important;
+    padding: 0px 0px 0px 10px !important;
+    border-radius: 0px !important;
+}
+
+.card-header-hrm p {
+    line-height: 34px !important;
+    color: #00558F !important;
+    font-size: 13px !important;
+    font-weight: 600 !important;
+}
+
+.card-body-hrm {
+    padding: 10px !important;
+    border-radius: 0px !important;
+    border: 1px solid #EDF2F8 !important;
+}
+
+.icon-bamboo {
+    color: #4ebdec !important;
+}
+
+.btn-bambo-white {
+    background-color: white !important;
+    padding: 0px 10px !important;
+    border: 1px solid #EDF2F8 !important;
+}
+
+.table-bamboo {
+    color: #626262 !important;
+    margin-bottom: 10px !important;
+}
+
+.table-bamboo .kuma-uxtable-cell {
+    padding-left: 10px !important;
+    padding-right: 10px !important;
+    border: 1px solid #EDF2F8;
+}
+
+.img-show-on-table {
+    border: 1px solid #EDF2F8 !important;
+    width: 64px !important;
+    height: 39px !important;
+    margin-right: 5px;
+}
+
+.table-bamboo .kuma-uxtable-header {
+    /* border-bottom: 1px solid #EDF2F8 !important; */
+}
+
+a.kuma-button-group-separated-item i {
+    color: #626262 !important;
+}
+
+.pull-left {
+    float: left !important;
+}
+
+.kuma-dlg-footer {
+    display: none;
+}
+
+.btn-not-radius {
+    border-radius: 0px !important;
+}
+
+.no-padding {
+    padding: 0px !important;
+}
+
+.kuma-tab-tab {
+    padding: 0px 10px !important;
+}
+
+.crumb-item-style {
+    font-weight: 600 !important;
+    font-size: 18px !important;
+    line-height: 21px !important;
+    color: #333 !important;
+}
+
+.crumb-item-active {
+    color: #4EBDEC !important;
+}
+
+.bold500 {
+    font-weight: 600;
+    color: #626262 !important;
+}
+
+.kuma-tab.kuma-tab-lg > .kuma-tab-bar .kuma-tab-nav .kuma-tab-ink-bar, .kuma-tab.kuma-tab-sm > .kuma-tab-bar .kuma-tab-nav .kuma-tab-ink-bar {
+    background-color: #4EBDEC !important;
+}
+
+.kuma-tab-tab:hover {
+    color: #4EBDEC !important;
+}
+
+.kuma-label .label-content {
+    font-size: 13px !important;
+}
+
+.kuma-uxform-field {
+    padding: 0 15px 15px 0;
+}
+
+.kuma-uxform-field .kuma-label .label-content {
+    text-align: left !important;
+}
+
+.fromUser .kuma-uxform-field {
+    padding: 0px 20px 15px 0px !important;
+    max-width: 16.67% !important;
+    min-width: 250px !important;
+}
+
+.kuma-calendar-table th {
+    background-color: white !important;
+}
+
+.formBigRow {
+    margin-top: 35px !important;
+}
+
+.userQualificationTable .kuma-uxtable-cell {
+    background-color: white !important;
+}
+
+.card-hrm {
+    border: none !important;
+    margin-bottom: 20px;
+    filter: drop-shadow(0px 0px 10px rgba(98, 98, 98, 0.1));
+}
+
+.card-header-hrm {
+    height: 34px !important;
+    background-color: #e9f5fe !important;
+    padding-left: 10px !important;
+    border: 1px solid #e9f5fe !important;
+    padding: 0px 0px 0px 10px !important;
+    border-radius: 0px !important;
+}
+
+.card-header-hrm p {
+    line-height: 34px !important;
+    color: #00558f !important;
+    font-size: 13px !important;
+    font-weight: 600 !important;
+}
+
+.card-body-hrm {
+    padding: 10px !important;
+    border-radius: 0px !important;
+    border: 1px solid #edf2f8 !important;
+}
+
+.icon-bamboo {
+    color: #4ebdec !important;
+}
+
+.btn-bambo-white {
+    background-color: white !important;
+    padding: 0px 10px !important;
+    border: 1px solid #edf2f8 !important;
+}
+
+.table-bamboo {
+    color: #626262 !important;
+    margin-bottom: 10px !important;
+}
+
+.table-bamboo .kuma-uxtable-cell {
+    padding-left: 10px !important;
+    padding-right: 10px !important;
+    border: 1px solid #edf2f8;
+}
+
+.img-show-on-table {
+    border: 1px solid #edf2f8 !important;
+    width: 64px !important;
+    height: 39px !important;
+    margin-right: 5px;
+}
+
+.table-bamboo .kuma-uxtable-header {
+    /* border-bottom: 1px solid #EDF2F8 !important; */
+}
+
+a.kuma-button-group-separated-item i {
+    color: #626262 !important;
+}
+
+.table-bamboo .kuma-uxtable-body .kuma-uxtable-row-cells {
+    border-bottom: 1px solid #edf2f8 !important;
+}
+
+.pull-left {
+    float: left !important;
+}
+
+.kuma-dlg-footer {
+    display: none;
+}
+
+.btn-not-radius {
+    border-radius: 0px !important;
+}
+
+.btn-image {
+    position: absoulute;
+    width: 134px !important;
+    /* height: 134px !important; */
+    top: 0;
+    left: 0;
+}
+
+.no-padding {
+    padding: 0px !important;
+}
+
+.kuma-tab-tab {
+    padding: 0px 10px !important;
+}
+
+.crumb-item-style {
+    font-weight: 600 !important;
+    font-size: 18px !important;
+    line-height: 21px !important;
+    color: #626262 !important;
+}
+
+.crumb-item-active {
+    color: #4ebdec !important;
+}
+
+.bold500 {
+    font-weight: 600;
+    color: #626262 !important;
+}
+
+.kuma-tab.kuma-tab-lg > .kuma-tab-bar .kuma-tab-nav .kuma-tab-ink-bar,
+.kuma-tab.kuma-tab-sm > .kuma-tab-bar .kuma-tab-nav .kuma-tab-ink-bar {
+    background-color: #4ebdec !important;
+}
+
+.kuma-tab-tab:hover {
+    color: #4ebdec !important;
+}
+
+#menu-header .kuma-menu {
+    background: #4ebdec;
+    height: 48px;
+    line-height: 48px;
+    color: #fff;
+    font-weight: 500;
+    padding-left: 205px;
+    background: url("../image/BTalent_logo.svg") no-repeat center left;
+    background-position-x: 16px;
+    background-position-y: -3px;
+    background-size: 160px;
+}
+
+.edit_icon {
+    background: url("../image/edit_icon.png") no-repeat center center;
+    width: 20px !important;
+    height: 20px !important;
+    background-color: transparent !important;
+    color: transparent !important;
+    margin: 10px 16px !important;
+    border: 0px !important;
+}
+
+.kuma-page-item-active {
+    background: #888888 !important;
+    color: #fff !important;
+    border: none !important;
+}
+
+.kuma-menu-horizontal {
+    border-bottom: 0px !important;
+}
+
+.logobamboo {
+    width: 170px;
+    height: 24px;
+}
+
+.pro-menu-item > .pro-inner-item {
+    padding: 0px 0px 0px 16px !important;
+}
+
+ul > .pro-menu-item {
+    height: 52px;
+    line-height: 52px;
+    color: #4ebdec;
+}
+
+.show-title-bb {
+    padding: 0 0 9px 0 !important;
+    border-bottom: 1px solid #e8e8e8;
+    line-height: 33px;
+    font-weight: 500;
+    font-size: 18px;
+    color: #4ebdec;
+}
+
+.kuma-uxtable {
+    margin: 0 -10px;
+    color: rgb(54, 54, 54) !important;
+}
+
+.kuma-uxtable-header {
+    display: block !important;
+    color: #404040 !important;
+    font-size: 13px !important;
+}
+
+.kuma-uxtable-cell {
+    height: 38px !important;
+    line-height: 40px !important;
+    padding: 0px 10px !important;
+}
+
+.iconmn_l {
+    margin-top: 15px;
+    float: left;
+}
+
+.pro-menu ul li:nth-child(2) {
+    background-color: #4ebdec;
+    color: #fff;
+}
+
+.create_bb {
+    background-color: #4ebdec !important;
+    border-radius: 0px !important;
+}
+
+.kuma-menu-horizontal > .kuma-menu-item-active,
+.kuma-menu-horizontal > .kuma-menu-item-open,
+.kuma-menu-horizontal > .kuma-menu-item-selected,
+.kuma-menu-horizontal > .kuma-menu-item:hover,
+.kuma-menu-horizontal > .kuma-menu-submenu-active,
+.kuma-menu-horizontal > .kuma-menu-submenu-open,
+.kuma-menu-horizontal > .kuma-menu-submenu-selected,
+.kuma-menu-horizontal > .kuma-menu-submenu:hover {
+    border-bottom: 2px solid #0079f2;
+}
+
+.kuma-menu-item a {
+    font-size: 12px !important;
+}
+
+.kuma-uxtable-header-wrapper {
+    border-bottom: 1px solid rgba(31, 56, 88, 0.1);
+}
+
+.pro-menu-item .icon svg {
+    margin-top: 15px;
+}
+
+/* fix fixed last */
+.kuma-uxtable-row-cells .kuma-uxtable-cell:last-child,
+.kuma-uxtable-row-cells .kuma-uxtable-cell:last-child(2) {
+    display: hidden !important;
+}
+
+.kuma-uxtable-h-sort {
+    float: left;
+    margin-top: 12px;
+    margin-left: 0 !important;
+}
+
+.kuma-menu-item-active,
+.kuma-menu-item:hover,
+.kuma-menu-submenu-active,
+.kuma-menu-submenu-title:hover,
+.kuma-menu:not(.kuma-menu-inline) .kuma-menu-submenu-open {
+    color: #fff !important;
+}
+
+.CanvasSection,
+.CanvasZone,
+.ControlZone {
+    padding: 0px !important;
+}
+
+.noselect {
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+    -khtml-user-select: none; /* Konqueror HTML */
+    -moz-user-select: none; /* Old versions of Firefox */
+    -ms-user-select: none; /* Internet Explorer/Edge */
+    user-select: none;
+    /* Non-prefixed version, currently
+                                   supported by Chrome, Edge, Opera and Firefox */
+}
+
+.CanvasComponent > div > div > div > div {
+    width: 100%;
+    max-width: 100% !Important;
+}
+
+.padding10 {
+    padding: 0px 10px !important;
+}
+
+.kuma-uxtable-column-picker-trigger {
+    padding: 0 10px !important;
+    border: 0 !important;
+    line-height: 30px;
+    font-size: 12px;
+}
+
+.kuma-uxtable-column-picker-trigger span,
+.kuma-uxtable-column-picker-trigger i {
+    color: #555 !important;
+}
+
+.kuma-uxtable-column-picker-trigger:hover,
+.kuma-uxtable-column-picker-trigger span:hover,
+.kuma-uxtable-column-picker-trigger i:hover {
+    color: #4ebdec !important;
+}
+
+
+.kuma-dlg-header {
+    border-bottom: 1px solid #edf2f8 !important;
+}
+
+.field100p .kuma-uxform-field {
+    max-width: 100% !important;
+}
+
+.formFootter {
+    margin-top: 25px !important;
+    padding-top: 20px !important;
+    border-top: 1px solid #edf2f8 !important;
+}
+
+.custom-dialog-salary {
+    /* height: 90%; */
+    overflow-y: scroll;
+    background-color: white;
+}
+
+.custom-form-row-3-column {
+    padding: 0px 20px 0px 0px !important;
+    max-width: 16.67% !important;
+    min-width: 515px !important;
+}
+
+.color-text input {
+    color: black;
+}
+
+.cs-input-pop {
+    margin-top: 4px;
+}
+
+.CanvasSection, .CanvasZone, .ControlZone {
+    margin-top: 0px !important;
+}
+
+.kuma-uxtable-header-scroll .kuma-uxtable-header,
+.kuma-uxtable-header,
+.kuma-uxtable-header-scroll .kuma-uxtable-header .kuma-uxtable-cell,
+.kuma-uxtable-header .kuma-uxtable-cell {
+    background-color: #f5f5f5 !important;
+}
+
+.padding10 {
+    padding: 0px 10px !important;
+}
+
+.kuma-uxtable-header .kuma-uxtable-cell {
+    font-weight: 500;
+    font-size: 14px;
+}
+
+.kuma-dlg-header {
+    border-bottom: 1px solid #EDF2F8 !important;
+}
+
+.field100p .kuma-uxform-field {
+    max-width: 100% !important;
+}
+
+.formFootter {
+    margin-top: 25px !important;
+    padding-top: 20px !important;
+    border-top: 1px solid #EDF2F8 !important;
+}
+
+.uploader-bamboo {
+    height: 30px !important;
+    margin-top: 3px !important;
+}
+
+.uploader-bamboo .kuma-upload-filelist {
+    height: 30px !important;
+    width: 45px !important;
+    border-radius: 0px !important;
+    margin: 0px !important;
+    margin-top: 1px !important;
+}
+
+.uploader-bamboo .inner {
+    height: 30px !important;
+}
+
+.view-mode .uploader-bamboo .inner {
+    height: 100% !important;
+}
+
+.uploader-bamboo .kuma-upload-fileitem-visual {
+    height: 30px !important;
+    width: 45px !important;
+}
+
+.uploader-bamboo .field-image-info {
+    height: 30px !important;
+    width: 45px !important;
+}
+
+.uploader-bamboo img {
+    height: 28px !important;
+    width: 45px !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    border: 0 !important;
+}
+
+.uploader-bamboo .field-image-preview {
+    height: 28px !important;
+    width: 45px !important;
+    border-radius: 0 !important;
+    position: absolute !important;
+    margin-top: 1px;
+}
+
+.edit-mode .kuma-upload-filelist.nwmode .kuma-upload-fileitem-img {
+    width: 48% !important;
+    margin-right: 2% !important;
+}
+
+.view-mode .uploader-bamboo,
+.view-mode .uploader-bamboo .kuma-upload-filelist {
+    height: auto !important;
+    margin: 0 !important;
+    width: 100% !important;
+}
+
+.view-mode .uploader-bamboo .kuma-upload-fileitem-img,
+.view-mode .uploader-bamboo .field-image-info {
+    padding: 0 !important;
+    margin: 0 !important;
+    float: left !important;
+    width: 45px !important;
+    height: 45px !important;
+    margin-right: 8px !important;
+    margin-bottom: 8px !important;
+    clear: none !important;
+}
+
+.view-mode .uploader-bamboo img {
+    height: 45px !important;
+    width: 45px !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    border: 0 !important;
+}
+
+.kuma-upload-filelist.nwmode .kuma-upload-fileitem-visual:hover .field-status .preview-action {
+    margin-right: 0px !important;
+    position: absolute !important;
+    top: 0 !important;
+    left: 0px !important;
+    background: none !important;
+    border: none !important;
+}
+
+.uploader-bamboo a.kuma-upload-action {
+    padding: 15px;
+}
+
+.label-file {
+    width: 75px;
+    height: 15px;
+    left: 20px;
+    top: 436px;
+}
+
+.icon-file {
+    align-items: center;
+    padding: 8px;
+    width: 100px;
+    height: 35px;
+    background: #FFFFFF;
+    border: 1px solid #DEE2E6;
+    box-sizing: border-box;
+}
+
+.icon-file svg {
+    float: left;
+}
+
+.icon-file div {
+    float: left;
+    margin-left: 10px;
+}
+
+.upload-avatar .icon-file {
+    align-items: center;
+    padding: 8px 4px 1px 4px;
+    width: 70px;
+    height: 35px;
+    left: 105px;
+    top: 428px;
+    color: #626262;
+    background: #FFFFFF;
+    border: 1px solid #DEE2E6;
+    box-sizing: border-box;
+}
+
+.upload-avatar:hover i, .upload-avatar:hover label {
+    color: #4EBDEC !important;
+}
+
+.margin-top-10 {
+    margin-top: 10px !important;
+}
+
+.kuma-uxtable-body {
+    margin-bottom: 0px !important;
+    font-size: 13px !important;
+}
+
+
+/*h2n*/
+.kuma-menu-submenu-placement-bottomLeft ul li a, .kuma-menu-submenu-placement-bottomLeft ul li a {
+    font-size: 14px !important;
+}
+
+.kuma-menu-submenu-placement-rightTop > ul {
+    padding-top: 5px !important;
+    padding-bottom: 5px !important;
+}
+
+.kuma-menu-submenu-placement-rightTop > ul > li {
+    line-height: 23px !important;
+    height: 23px !important;
+}
+
+.kuma-menu-submenu-vertical > .kuma-menu-submenu-title .kuma-menu-submenu-arrow:after {
+    color: #000 !important;
+}
+
+#SuiteNavPlaceholder {
+    margin-top: -48px !important;
+}
+
+#SuiteNavPlaceholder > div > div:nth-child(3), #O365_HeaderRightRegion {
+    z-index: 9999;
+    height: 48px;
+    width: 48px;
+    position: fixed;
+    top: 0px;
+    right: 0px;
+    display: flex;
+    background-color: #39b4e8 !important;
+    color: #fff !important;
+}
+
+#O365_HeaderRightRegion > div > button, #SuiteNavPlaceholder > div > div:nth-child(3) > div > button {
+    background-color: #39b4e8 !important;
+}
+
+#O365_HeaderRightRegion > div > button > div, #SuiteNavPlaceholder > div > div:nth-child(3) > div > button > div {
+    color: #fff !important;
+    border-color: #fff !important;
+}
+
+#mectrl_headerPicture {
+    color: #fff !important;
+    border-color: #fff !important;
+}
+
+#container {
+    top: 49px !important;
+    width: 100%;
+    position: relative;
+    margin: 0px !important;
+    padding: 0px !important;
+}
+
+#menu-header {
+    background: #4ebdec;
+    z-index: 10;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+}
+
+.kuma-menu-vertical > li a {
+    text-decoration: none;
+}
+
+.kuma-menu-submenu-horizontal.kuma-menu-submenu-open.kuma-menu-submenu-active {
+    background: #299acc !important;
+}
+
+.kuma-menu-vertical li:hover, .kuma-menu-vertical li:active {
+    background: #50a1c5;
+    color: #fff !important;
+}
+
+.kuma-menu-vertical li:hover > a, .kuma-menu-vertical li:active > a {
+    background: #50a1c5;
+    color: #fff !important;
+}
+
+.kuma-menu-inline > .kuma-menu-item, .kuma-menu-inline > .kuma-menu-submenu > .kuma-menu-submenu-title, .kuma-menu-vertical-left > .kuma-menu-item, .kuma-menu-vertical-left > .kuma-menu-submenu > .kuma-menu-submenu-title, .kuma-menu-vertical-right > .kuma-menu-item, .kuma-menu-vertical-right > .kuma-menu-submenu > .kuma-menu-submenu-title, .kuma-menu-vertical > .kuma-menu-item, .kuma-menu-vertical > .kuma-menu-submenu > .kuma-menu-submenu-title {
+    line-height: 34px !important;
+    height: 34px !important;
+}
+
+.kuma-menu-vertical li {
+    margin-bottom: 2px !important;
+}
+
+.kuma-menu-vertical li.kuma-menu-item:hover > span > a {
+    color: #fff !important;
+}
+
+.kuma-menu-vertical-left.kuma-menu-sub .kuma-menu-item, .kuma-menu-vertical-right.kuma-menu-sub .kuma-menu-item, .kuma-menu-vertical.kuma-menu-sub .kuma-menu-item {
+    border-right: 0;
+    margin-left: 0;
+    left: 0;
+    line-height: 28px !important;
+    height: 28px !important;
+}
+
+/*
+.option-bamboo ul.view-mode span {
+    font-weight: 600;
+    color: #4ebdec !important;
+}*/
+
+.kuma-uxtable-body span.kuma-uxtable-expand-icon {
+    margin-right: 50px;
+}
+
+.kuma-uxtable-body ul.kuma-uxtable-tree-row > li.kuma-uxtable-row .kuma-uxtable-cell:nth-child(1) {
+    padding-left: 25px !important;
+}
+
+.kuma-uxtable-body ul.kuma-uxtable-tree-row > li.kuma-uxtable-row .kuma-uxtable-cell:nth-child(2) {
+    margin-left: 0;
+}
+
+.kuma-uxtable-body ul.kuma-uxtable-tree-row > li.kuma-uxtable-row .kuma-uxtable-cell:nth-child(2) > div.default-cell {
+    padding-left: 15px;
+}
+
+.kuma-uxtable-body ul.kuma-uxtable-tree-row ul.kuma-uxtable-tree-row > li.kuma-uxtable-row .kuma-uxtable-cell:nth-child(1) {
+    padding-left: 40px !important;
+}
+
+.kuma-uxtable-body ul.kuma-uxtable-tree-row ul.kuma-uxtable-tree-row > li.kuma-uxtable-row .kuma-uxtable-cell:nth-child(2) {
+    margin-left: 0;
+}
+
+.kuma-uxtable-body ul.kuma-uxtable-tree-row ul.kuma-uxtable-tree-row > li.kuma-uxtable-row .kuma-uxtable-cell:nth-child(2) > div.default-cell {
+    padding-left: 30px;
+}
+
+.kuma-uxtable-body ul.kuma-uxtable-tree-row ul.kuma-uxtable-tree-row ul.kuma-uxtable-tree-row > li.kuma-uxtable-row .kuma-uxtable-cell:nth-child(1) {
+    padding-left: 45px !important;
+}
+
+.kuma-uxtable-body ul.kuma-uxtable-tree-row ul.kuma-uxtable-tree-row ul.kuma-uxtable-tree-row > li.kuma-uxtable-row .kuma-uxtable-cell:nth-child(2) {
+    margin-left: 0;
+}
+
+.kuma-uxtable-body ul.kuma-uxtable-tree-row ul.kuma-uxtable-tree-row ul.kuma-uxtable-tree-row > li.kuma-uxtable-row .kuma-uxtable-cell:nth-child(2) > div.default-cell {
+    padding-left: 45px;
+}
+
+.kuma-uxtable-header-filter-body {
+    padding: 5px;
+    background: #fff;
+}
+
+.kuma-uxtable-body a.kuma-button-group-separated-item {
+    padding: 0 8px !important;
+}
+
+.kuma-uxtable-body a.kuma-button-group-separated-item-first {
+    padding-left: 0 !important;
+}
+
+/*
+ul.kuma-uxtable-tree-row .kuma-uxtable-cell:nth-child(1){
+  padding-left: 35px;
+}
+ul.kuma-uxtable-tree-row .kuma-uxtable-cell:nth-child(2){
+  margin-left: -15px;
+}
+ul.kuma-uxtable-tree-row ul.kuma-uxtable-tree-row .kuma-uxtable-cell:nth-child(1){
+  padding-left: 50px;
+}
+ul.kuma-uxtable-tree-row ul.kuma-uxtable-tree-row .kuma-uxtable-cell:nth-child(2){
+  margin-left: -30px;
+}
+ul.kuma-uxtable-tree-row ul.kuma-uxtable-tree-row ul.kuma-uxtable-tree-row .kuma-uxtable-cell:nth-child(1){
+  padding-left: 65px;
+}
+ul.kuma-uxtable-tree-row ul.kuma-uxtable-tree-row ul.kuma-uxtable-tree-row .kuma-uxtable-cell:nth-child(2){
+  margin-left: -45px;
+}
+
+ul.kuma-uxtable-tree-row .kuma-uxtable-cell:nth-child(2)>div.default-cell{
+  padding-left: 15px;
+}
+ul.kuma-uxtable-tree-row ul.kuma-uxtable-tree-row .kuma-uxtable-cell:nth-child(2)>div.default-cell{
+  padding-left: 30px;
+}
+ul.kuma-uxtable-tree-row ul.kuma-uxtable-tree-row ul.kuma-uxtable-tree-row .kuma-uxtable-cell:nth-child(2)>div.default-cell{
+  padding-left: 45px;
+}
+.kuma-uxtable-body-right-fixed .kuma-uxtable-cell{
+  padding-left: 20px !important;
+}
+.kuma-uxtable-body-right-fixed div.default-cell{
+  padding-left: 20px !important;
+}
+*/
+
+.kuma-uxform .form_button {
+    padding: 0;
+    margin-bottom: 20px;
+}
+
+.kuma-uxform .form_button button {
+    margin: 0 10px 0 0 !important;
+    border-radius: 0 !important;
+}
+
+
+.uxcore-icon:hover {
+    color: #4ebdec !important;
+}
+
+.btn-bamboo-white {
+    font-size: 12px;
+    border-radius: 0px !important;
+    border: none !important;
+    color: #555555 !important;
+    background-color: white !important;
+    padding: 0px 10px !important;
+}
+
+.btn-bamboo-white:hover {
+    color: #4ebdec !important;
+}
+
+.user-profile-col-avatar {
+    width: 15%;
+    float: left;
+    min-width: 134px;
+    max-width: 134px;
+}
+
+.user-profile-col-info {
+    width: 30%;
+    float: left;
+    padding-left: 20px;
+}
+
+.user-profile-col-action {
+    width: 55%;
+    float: right;
+}
+
+.kuma-uxform-field__view .kuma-label {
+    margin-bottom: 0px !important;
+}
+
+.kuma-uxform-field__view .view-mode {
+    padding-top: 0px !important;
+}
+
+.kuma-dlg-title {
+    padding: 15px 0px 5px 0px !important;
+    text-transform: uppercase;
+}
+
+.kuma-dlg-body {
+    padding: 15px 0px 0px 20px !important;
+}
+
+.kuma-uxform .kuma-label {
+    margin: 2px 0px !important;
+    padding: 0px !important;
+}
+
+.kuma-calendar-tbody tr {
+    background-color: white !important;
+}
+
+.pd-r-0 {
+    padding-right: 0px !important;
+}
+
+.bamboo-checkbox .kuma-label {
+    margin: 0px !important;
+}
+
+.bamboo-checkbox ul.kuma-uxform-field-content {
+    margin-bottom: 0px !important;
+}
+
+.fromUser span.icon-file {
+    margin-left: 20px !important;
+}
+
+.popup-footer {
+    width: 100% !important;
+    margin-left: -20px !important;
+    margin-right: -20px !important;
+    border-top: 1px solid whitesmoke !important;
+    text-align: left !important;
+    padding: 20px;
+}
+
+.popup-footer button {
+    margin: 0px !important;
+    margin-right: 10px !important;
+    border-radius: 0px !important;
+}
+
+.bamboo-form-title .kuma-uxform-field-content {
+    display: none !important;
+}
+
+.bamboo-form-title .label-content {
+    color: #4ebdec !important;
+    font-size: 12px !important;
+}
+
+span.kuma-uxtable-column-picker-title {
+    visibility: none;
+    position: relative;
+}
+
+span.kuma-uxtable-column-picker-title:after {
+    content: 'Hiá»ƒn thá»‹';
+    visibility: visible;
+    position: absolute;
+    top: -6px;
+    left: 0;
+}
+
+.kuma-tab.kuma-tab-sm > .kuma-tab-bar .kuma-tab-tab {
+    font-size: 13px !important;
+    color: rgba(0, 0, 0);
+}
+
+.kuma-button {
+    line-height: 32px !important;
+}
+
+::-webkit-scrollbar {
+    height: 10px !important;
+    cursor: pointer !important;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #f0f0f0 !important;
+}
+
+.kuma-uxtable-main-table {
+    overflow: hidden;
+}
+
+.kuma-uxtable-main-table:hover {
+    overflow: auto;
+}
+
+.fromUser .kuma-select2-selection--single .kuma-select2-selection__rendered {
+    line-height: 38px !important;
+}
+
+.mg-t-20 {
+    margin-top: 20px !important;
+}
+
+.bamboo-sub-menu-title {
+    line-height: 42px !important;
+    font-size: 16px !important;
+    padding-top: 6px !important;
+}
+
+button[class^="kuma-button-secondary"] {
+    color: #333 !important;
+}
+
+.kuma-label {
+    color: #333 !important;
+}
+
+.kuma-tab-bar .kuma-tab-tab-active {
+    color: #4EBDEC !important;
+}
+
+.kuma-button-primary {
+    background-color: #4ebdec !important;
+    border-color: #4ebdec !important;
+    color: white !important;
+}
+
+.btn-bamboo-full-column {
+    padding: 0px -20px !important;
+    margin: 0px !important;
+    width: 100% !important;
+    text-align: left !important;
+    background: none !important;
+    color: #333 !important;
+    font-size: 13px !important;
+    border-radius: 0px !important;
+    border: none !important;
+    /* background-color: white !important; */
+}
+
+.view-mode > li.kuma-uxform-field-core,
+.view-mode > li.kuma-checkbox-group-uxform-field,
+.view-mode > li.kuma-select-uxform-field,
+.view-mode > li.kuma-search-uxform-field,
+.view-mode > li.kuma-input-uxform-field,
+.view-mode > li.kuma-textarea-uxform-field,
+.view-mode > li.kuma-cascade-select-uxform-field,
+.view-mode > li.kuma-date-uxform-field,
+.view-mode > li.kuma-upload-uxform-field,
+.view-mode > li.kuma-editor-uxform-field,
+.view-mode > li.kuma-number-input-uxform-field,
+.view-mode > li.kuma-radio-group-uxform-field,
+.view-mode > li.kuma-pickable-uxform-field,
+.view-mode > li.kuma-input-uxform-field-core {
+    border: 1px solid #ccc !important;
+    padding: 10px 10px 8px 10px !important;
+    border-radius: 5px !important;
+    min-height: 36px;
+    display: block;
+}
+
+.view-mode > li.kuma-uxform-field-core p,
+.view-mode > li.kuma-uxform-field-core span,
+.view-mode > li.kuma-input-uxform-field-core span,
+.view-mode > li.kuma-input-uxform-field-core p {
+    height: 38px;
+    white-space: pre-wrap;
+    overflow-wrap: break-word;
+    overflow: auto;
+    color: #555555 !important;
+}
+
+.view-mode > li.kuma-checkbox-group-uxform-field span,
+.view-mode > li.kuma-select-uxform-field span,
+.view-mode > li.kuma-search-uxform-field span,
+.view-mode > li.kuma-textarea-uxform-field span,
+.view-mode > li.kuma-input-uxform-field span,
+.view-mode > li.kuma-cascade-select-uxform-field span,
+.view-mode > li.kuma-date-uxform-field span,
+.view-mode > li.kuma-editor-uxform-field span,
+.view-mode > li.kuma-number-input-uxform-field span,
+.view-mode > li.kuma-radio-group-uxform-field span,
+.view-mode > li.kuma-pickable-uxform-field span,
+.view-mode > li.kuma-uxform-field-core span,
+.view-mode .kuma-checkbox-group-item__disabled {
+    color: #555555 !important;
+    font-weight: 400 !important;
+}
+
+.kuma-uxform-input {
+    clear: both;
+    display: block;
+}
+
+.kuma-uxtable-body {
+    color: #555555 !important;
+}
+
+.uxcore-tag {
+    padding-top: 2px !important;
+}
+
+.kuma-button-sm {
+    padding: 0 8px;
+    height: 28px;
+    line-height: 26px !important;
+    font-size: 12px;
+}
+
+.kuma-tree li .kuma-tree-node-content-wrapper-normal, .kuma-tree li a,
+.kuma-dropdown-menu-item, .kuma-dropdown-menu-submenu-title {
+    color: #555555 !important;
+}
+
+.view-mode > li.kuma-uxform-field-core {
+    border: 1px solid #ccc !important;
+    border-radius: 5px !important;
+    min-height: 36px !important;
+    padding: 5px 12px;
+    line-height: 18px;
+}
+
+.uxcore-tree-select-selection-selected-value {
+    color: #555555 !important;
+}
+
+.loading-progress {
+    z-index: 100000;
+    background-color: rgba(255, 255, 255, 0.85);
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    min-height: 800px;
+}
+
+.loading-logo {
+    position: absolute;
+    width: 70px;
+    height: 70px;
+    top: 50%;
+    left: 50%;
+    margin: -65px 0 0 -35px;
+}
+
+.loading-spinner {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 200px;
+    height: 200px;
+    margin: -130px 0 0 -100px;
+    -webkit-animation: spin 1.7s linear infinite;
+    -moz-animation: spin 1.7s linear infinite;
+    animation: spin 1.7s linear infinite;
+    background-size: 200px 200px;
+    background-image: url(data:image/png;base64,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);
+}
+
+.loading-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 200px;
+    margin: 70px 0 0 -100px;
+    text-align: center;
+    font-size: 16px;
+    color: #00458f;
+}
+
+
+.success {
+    background-color: #64AF53 !important;
+    border: none !important;
+}
+
+.danger {
+    background-color: #F3B436 !important;
+    border: none !important;
+}
+
+.warning {
+    background-color: #F35D5D !important;
+    border: none !important;
+}
+
+.btn-status {
+    margin-top: 5px !important;
+}
+
+.kuma-dlg-title {
+    text-indent: 15px
+}
+
+.kuma-dlg-confirm .kuma-dlg-body {
+    padding: 15px !important;
+    padding-right: 0 !important;
+}
+
+.kuma-dlg-confirm .form_button {
+    margin-bottom: 0 !important;
+    margin-top: 5px !important;
+}
+
+.kuma-uxform .form_button .cancel {
+    float: right !important;
+    margin-right: 15px !important;
+}
+
+.kuma-uxtable-cell-checkboxSelector {
+    text-overflow: unset !important;
+}
+
+.kuma-uxtable-actionbar {
+    padding-left: 10px !important;
+}
+
+.btn-approve-confirm {
+    padding: 0 !important;
+    color: white !important;
+    background-color: #64AF53 !important;
+    border-color: #64AF53 !important;
+    margin-top: 5px;
+}
+
+.btn-approve-cancel {
+    padding: 0 !important;
+    color: white !important;
+    background-color: #F35D5D !important;
+    border-color: #F35D5D !important;
+    margin-top: 5px;
+}
+
+.btn-approve-new {
+    padding: 0 !important;
+    color: white !important;
+    background-color: #4EBDEC !important;
+    border-color: #4EBDEC !important;
+    margin-top: 5px;
+}
+
+.btn-approve-waitting {
+    padding: 0 !important;
+    color: white !important;
+    background-color: #F3B436 !important;
+    border-color: #F3B436 !important;
+    margin-top: 5px;
+}
+
+.colunm_bb .kuma-uxtable-column-picker-trigger {
+    background: #eeeeee;
+}
+
+.approve-danger .kuma-input,
+.approve-danger .kuma-textarea,
+.approve-danger .kuma-select2-enabled .kuma-select2-selection:active,
+.approve-danger .kuma-select2-enabled .kuma-select2-selection:hover,
+.approve-danger .kuma-select2-focused .kuma-select2-selection,
+.approve-danger .kuma-select2-selection,
+.approve-danger .kuma-calendar-picker-input .kuma-input {
+    border: 1px solid #F35D5D;
+}
+
+.approve-success .kuma-input,
+.approve-success .kuma-textarea,
+.approve-success .kuma-select2-enabled .kuma-select2-selection:active,
+.approve-success .kuma-select2-enabled .kuma-select2-selection:hover,
+.approve-success .kuma-select2-focused .kuma-select2-selection,
+.approve-success .kuma-select2-selection,
+.approve-success .kuma-calendar-picker-input .kuma-input {
+    border: 1px solid #64AF53;
+}
+
+.approve-danger .kuma-uxform-tips {
+    color: #F35D5D;
+}
+
+.view-mode .kuma-checkbox[type=checkbox]:checked:disabled + s {
+    background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16'%3E%3Crect x='1' y='1' width='14' height='14' fill='%230079F2' stroke='%230079F2' rx='3' ry='3'/%3E%3Cpath stroke='%23fff' stroke-width='2' stroke-linecap='square' fill='transparent' d='M5 9l2.5 2L12 5.5'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+}
+
+.option-bamboo .kuma-checkbox-group-uxform-field .kuma-checkbox-group,
+.option-bamboo .kuma-checkbox-group-uxform-field .kuma-radio-group,
+.option-bamboo .kuma-radio-group-uxform-field .kuma-checkbox-group,
+.option-bamboo .kuma-radio-group-uxform-field .kuma-radio-group {
+    margin-top: 0;
+    padding-top: 2px;
+}
+
+.option-bamboo .kuma-checkbox-group-item {
+    display: block;
+}
+
+.kuma-dlg-confirm .kuma-button-sm {
+    width: 80px !important;
+}
+
+.card-hrm {
+    filter: none !important;
+}
+
+.view-mode > li.kuma-h1-uxform-field-li,
+.view-mode > li.kuma-checkbox-group-uxform-field-li {
+    border: 0 !important;
+    padding: 0 !important;
+}
+.view-mode > .kuma-time-picker-uxform-field-li input,
+.view-mode > .kuma-time-picker-uxform-field-li input:hover{
+    border: 0;
+    background: none;
+    color: #555!important;
+    padding:0;
+}
+
+.view-mode > .kuma-time-picker-uxform-field-li .uxcore-time-picker-icon{
+    display: none;
+}
+.kuma-uxtable-column-picker-popover .kuma-tree {
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+}
+
+.kuma-uxtable-column-picker-popover li span.kuma-tree-switcher-noop {
+    display: none;
+}
+
+.kuma-uxtable-column-picker-popover .kuma-popover-inner {
+    padding-top: 10px !important;
+}
+
+.user-profile-col-action .kuma-alert-container {
+    margin-bottom: 10px !important;
+}
+
+.kuma-cascade-multi .kuma-cascade-multi-content {
+    width: 18%;
+    height: 400px;
+    padding: 8px 0;
+}
+
+.kuma-cascade-multi .kuma-cascade-multi-content .kuma-cascade-multi-list-item {
+    padding: 0 8px;
+}
+
+.kuma-cascade-multi .kuma-cascade-multi-result {
+    width: 28% !important;
+    height: 400px;
+}
+
+.kuma-cascade-multi .kuma-cascade-multi-result .kuma-cascade-multi-result-title {
+    margin: 8px !important;
+}
+
+.kuma-cascade-multi .kuma-cascade-multi-result .kuma-cascade-multi-result-tree > ul {
+    width: 100% !important;
+}
+
+.kuma-cascade-multi .kuma-cascade-multi-result .kuma-cascade-multi-result-tree ul li .tree-node-ul-li-div .tree-node-ul-li-span .tree-node-ul-li-del {
+    right: 28px !important;
+}
+
+.kuma-cascade-multi .kuma-cascade-multi-result .kuma-cascade-multi-result-tree {
+    height: 365px !important;
+}
+
+.btn-form-table-delete {
+    background: #e4432f !important;
+    border-color: #e4432f !important;
+    color: #FFFFFF!important;
+}
+
+.btn-form-table-delete:focus,
+.btn-form-table-delete:hover {
+    background: #f25946 !important;
+    border-color: #f25946 !important;
+    color: #FFFFFF!important;
+}
+.btn-form-table-delete.kuma-button-disabled {
+    background-color: rgba(31,56,88,.04) !important;
+    border-color: rgba(31,56,88,.2)!important;
+    color: #888888!important;
+}
+
+.checkbox-group-item-left label{
+    float:left;
+    margin-right: 6px;
+}
+.kuma-cascade-multi-panel-field-li .kuma-cascade-multi{
+    width: 100% !important;
+}
+.col-md-24, .col-xs-24 {
+    margin: 0px !important;
+    padding: 0px !important;
+}
+.kuma-uxtable {
+    margin: 0px !important;
+}
+.bottomSection {
+    border-left: none !important;
+}
+.show-grid .kuma-container-fluid > .show-title-bb {
+    height: 52px !important;
+    display: block !important;
+    line-height: 0px !important;
+    padding: 0px !important;
+}
+.show-grid .kuma-container-fluid > .show-title-bb > .col-md-24 {
+    margin-top: 10px !important;
+}
+.uploader-bamboo {
+  display: inline-block !important;
+}
+.dialog-view-pdf .kuma-dlg-body {
+  max-height: 600px !important;
+  overflow: auto !important;
+}
+.kuma-page-total {
+    font-size: 14px !important;
+}
+.kuma-uxtable-page {
+    padding-top: 10px !important;
+    padding-right: 10px !important;
+    padding-bottom: 0px !important;
+}
+.bottomSection {
+    padding-bottom: 0px !important;
+}
+.show-title-bb {
+    padding: 0 0 5px 0 !important;
+    border-bottom: 1px solid #e8e8e8;
+    line-height: 37px;
+    font-weight: 500;
+    font-size: 18px;
+    color: #4ebdec;
+}
+span.kuma-uxtable-column-picker-title {
+    visibility: none !important;
+}
+span.kuma-uxtable-column-picker-title:after {
+    content: none !important;
+}
+.kuma-uxtable-header-right-fixed .kuma-uxtable-cell, .kuma-uxtable-left-fixed-table .kuma-uxtable-header {
+    height: 38px !important;
+}
+.kuma-uxtable-main-table .kuma-uxtable-header-wrapper {
+    padding-bottom: 7px !important;
+}
+img.thumbnail-acttackfile {
+    height: 30px !important;
+    display: block !important;
+    float: left !important;
+    margin: 4px 5px 4px 0px !important;
+    width: 30px !important;
+    padding: 2px !important;
+    cursor: pointer !important;
+    /* border-radius: 3px !important;
+    border-top-color: grey;
+    border-top-style: solid;
+    border-top-width: 1px;
+    border-right-color: grey;
+    border-right-style: solid;
+    border-right-width: 1px;
+    border-bottom-color: grey;
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+    border-left-color: grey;
+    border-left-style: solid;
+    border-left-width: 1px;
+    border-image-source: initial;
+    border-image-slice: initial;
+    border-image-width: initial;
+    border-image-outset: initial;
+    border-image-repeat: initial; */
+}
+img.thumbnail-acttackfile:hover{
+    background: gray !important;
+}
+.uploader-bamboo {
+    margin: 0px !important;
+    height: 38px !important;
+    border: none !important;
+    padding: 0px !important;
+}
+.kuma-upload-filelist.filelist-visual.nwmode {
+    height: 100% !important;
+    width: 30px !important;
+    margin: 0px !important;
+    padding: 0px !important;
+    position: absolute !important;
+}
+.uploader-bamboo .inner {
+    height: 35px !important;
+    margin: 3px 0px 0px 0px !important;
+}
+.uploader-bamboo .kuma-upload-fileitem-visual, .uploader-bamboo .field-image-info, .uploader-bamboo .field-image-preview {
+    height: 30px !important;
+    width: 30px !important;
+}
+.uploader-bamboo img {
+    height: 30px !important;
+    width: 30px !important;
+    position: absolute !important;
+    /* border: 1px solid gray !important; */
+    padding: 2px !important;
+}
+.kuma-upload-filelist.nwmode .kuma-upload-fileitem-visual {
+    margin-right: 5px !important;
+}
